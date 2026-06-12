@@ -136,9 +136,19 @@ const handleAppleRegister = () => {
 
 
 
-          {message && (
-            <p style={{ marginTop: "15px", color: "red" }}>{message}</p>
-          )}
+          {/* {message && (
+             <p style={{ marginTop: "15px", color:  message === "green" }}>{message}</p>
+          
+          )} */}
+
+         {
+          message && (
+            <p style={{marginTop: "15px", color: message === "Login successful" ? "green" : "red",}}> 
+            {message}
+            </p>
+          )
+         }
+
         </form>
 
         <p className="link-text">
